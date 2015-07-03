@@ -9,6 +9,11 @@ gem 'squeel'
 
 gem 'puma'
 
+gem 'bootstrap-sass'
+gem 'font-awesome-rails'
+gem 'slim-rails'
+gem 'kaminari'
+
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
