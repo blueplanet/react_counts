@@ -4,6 +4,9 @@ ruby '2.2.2'
 
 gem 'rails', '4.2.2'
 
+gem 'devise'
+gem 'devise-bootstrap-views'
+
 gem 'pg'
 gem 'squeel'
 
