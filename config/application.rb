@@ -21,5 +21,16 @@ module Rails4base
     config.i18n.default_locale = :ja
 
     config.active_record.raise_in_transactional_callbacks = true
+
+    config.generators do |g|
+      g.stylesheets false
+      g.javascripts false
+      g.helper false
+      g.assets false
+      g.view_specs false
+      g.controller_specs false
+      g.helper_specs false
+      g.fixture false
+    end
   end
 end
