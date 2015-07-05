@@ -18,6 +18,7 @@ Bundler.require(*Rails.groups)
 module Rails4base
   class Application < Rails::Application
     config.time_zone = 'Asia/Tokyo'
+    config.i18n.available_locales = [:ja]
     config.i18n.default_locale = :ja
 
     config.active_record.raise_in_transactional_callbacks = true

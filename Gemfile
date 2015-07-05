@@ -29,6 +29,7 @@ group :development do
   gem 'better_errors'
   gem 'bullet'
   gem 'binding_of_caller'
+  gem 'letter_opener'
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'quiet_assets'

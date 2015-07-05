@@ -1,0 +1,8 @@
+li
+  = link_to [:edit, current_user, :registration] do
+    i.fa.fa-user
+    =< t '.edit_profile'
+li
+  = link_to [:destroy, :user, :session], method: :delete do
+    i.fa.fa-sign-out
+    =< t '.sign_out'
