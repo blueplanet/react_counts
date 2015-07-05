@@ -14,8 +14,9 @@ gem 'puma'
 
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
-gem 'slim-rails'
 gem 'kaminari'
+gem 'slim-rails'
+gem 'simple_form'
 
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jbuilder', '~> 2.0'
