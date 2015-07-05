@@ -4,6 +4,9 @@ ruby '2.2.2'
 
 gem 'rails', '4.2.2'
 
+gem 'devise'
+gem 'devise-bootstrap-views'
+
 gem 'pg'
 gem 'squeel'
 
@@ -11,8 +14,9 @@ gem 'puma'
 
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
-gem 'slim-rails'
 gem 'kaminari'
+gem 'slim-rails'
+gem 'simple_form'
 
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jbuilder', '~> 2.0'
@@ -25,6 +29,7 @@ group :development do
   gem 'better_errors'
   gem 'bullet'
   gem 'binding_of_caller'
+  gem 'letter_opener'
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'quiet_assets'

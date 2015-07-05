@@ -1,0 +1,5 @@
+ja:
+  application:
+    guest_navbar:
+      sign_in: ログイン
+      sign_up: ユーザ登録
