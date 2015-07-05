@@ -6,8 +6,6 @@ gem 'rails', '4.2.2'
 
 gem 'devise'
 gem 'devise-bootstrap-views'
-gem 'devise-i18n'
-gem 'devise-i18n-views'
 
 gem 'pg'
 gem 'squeel'

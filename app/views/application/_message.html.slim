@@ -1,4 +1,2 @@
-- if notice
-  p.notice = notice
-- if alert
-  p.alert = alert
+= render 'alert', alert_type: 'info', message: notice if notice
+= render 'alert', alert_type: 'warning', message: alert if alert

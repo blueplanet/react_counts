@@ -1,0 +1,4 @@
+= content_tag :div, class: "alert alert-#{alert_type} alert-dismissiable", role: 'alert' do
+  button.close type='button' data-dismiss='alert' aria-label='Close'
+    span aria-hidden='true' &times;
+  = message
