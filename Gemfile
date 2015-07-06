@@ -12,6 +12,8 @@ gem 'squeel'
 
 gem 'puma'
 
+gem 'rails_config'
+
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
 gem 'kaminari'
