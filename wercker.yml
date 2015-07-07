@@ -1,0 +1,10 @@
+box: ruby:2.2.2
+services:
+    - postgres
+
+build:
+    steps:
+        - bundle-install
+        - script:
+            name: rspec
+            code: bundle exec rspec
