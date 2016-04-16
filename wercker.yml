@@ -1,4 +1,4 @@
-box: ruby:2.2.2
+box: ruby:2.3.0
 services:
     - postgres
 
@@ -10,8 +10,8 @@ build:
             code: bundle exec rspec
 
 deploy:
-  steps:
-    - heroku-deploy:
-        key: $HEROKU_KEY
-        user: $HEROKU_USER
-        app-name: $HEROKU_APP_NAME
+    steps:
+        - heroku-deploy:
+            key: $HEROKU_KEY
+            user: $HEROKU_USER
+            app-name: $HEROKU_APP_NAME
