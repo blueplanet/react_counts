@@ -1,4 +1,4 @@
-box: ruby:2.3.0
+box: rails:4.2.6
 services:
     - postgres
 
