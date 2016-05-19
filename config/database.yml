@@ -6,14 +6,14 @@ default: &default
 
 development:
   <<: *default
-  database: rails4base_development
+  database: react_accounts_development
 
 test:
   <<: *default
-  database: rails4base_test
+  database: react_accounts_test
 
 production:
   <<: *default
-  database: rails4base_production
-  username: rails4base
+  database: react_accounts_production
+  username: react_accounts
   password: <%= ENV['RAILS4BASE_DATABASE_PASSWORD'] %>
