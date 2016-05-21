@@ -7,12 +7,29 @@
     records = @state.records.slice()
     records.push record
     @setState records: records
+  credists: ->
+    credists = @state.records.filter (val) -> val.amount >= 0
+    credists.reduce ((prev, curr) ->
+      prev + parseFloat(curr.amount)
+    ), 0
+  debits: ->
+    debits = @state.records.filter (val) -> val.amount < 0
+    debits.reduce ((prev, curr) ->
+      prev + parseFloat(curr.amount)
+    ), 0
+  balance: ->
+    @debits() + @credists()
   render: ->
     React.DOM.div
       className: 'records'
       React.DOM.h2
         className: 'title'
         'Records'
+      React.DOM.div
+        className: 'row'
+        React.createElement AmountBox, type: 'success', amount: @credists(), text: 'Credit'
+        React.createElement AmountBox, type: 'danger', amount: @debits(), text: 'Debits'
+        React.createElement AmountBox, type: 'info', amount: @balance(), text: 'Balance'
       React.createElement RecordForm, handleNewRecord: @addRecord
       React.DOM.table
         className: 'table table-bordered'

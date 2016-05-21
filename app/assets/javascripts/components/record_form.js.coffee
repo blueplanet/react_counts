@@ -6,7 +6,6 @@
 
   handleSubmit: (e) ->
     e.preventDefault()
-    alert 'test'
     $.post '', { record: @state }, (data) =>
       @props.handleNewRecord data
       @setState @getInitialState()
