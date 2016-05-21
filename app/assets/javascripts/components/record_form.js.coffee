@@ -3,9 +3,19 @@
     title: ''
     date: ''
     amount: ''
+
+  handleSubmit: (e) ->
+    e.preventDefault()
+    alert 'test'
+    $.post '', { record: @state }, (data) =>
+      @props.handleNewRecord data
+      @setState @getInitialState()
+    , 'JSON'
+
   render: ->
     React.DOM.form
       className: 'form-inline'
+      onSubmit: @handleSubmit
       React.DOM.div
         className: 'form-group'
         React.DOM.input
@@ -14,6 +24,7 @@
           placeholder: 'Date'
           name: 'date'
           value: @state.date
+          onChange: @handleChange
       React.DOM.div
         className: 'form-group'
         React.DOM.input
