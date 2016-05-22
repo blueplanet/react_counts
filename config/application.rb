@@ -34,5 +34,7 @@ module ReactAccounts
       g.helper_specs false
       g.fixture false
     end
+
+    config.react.addons = true
   end
 end
